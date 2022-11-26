@@ -1,0 +1,16 @@
+.divEstilos{
+  margin: 1vh;
+  padding: 1vh;
+  text-align: center;
+  background-color: blue;
+  width: 50%;
+  height: 40vh;
+}
+.imgEstilos{
+  width: 100%;
+  height: 80%;
+
+}
+.btnEstilos{
+  width: 100%;
+}

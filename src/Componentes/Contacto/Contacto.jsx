@@ -1,0 +1,96 @@
+import React from "react";
+import { useForm } from "react-hook-form";
+import "./Contacto.css"
+
+
+const Contacto = () => {
+  document.title=`Mundo Café Contacto`
+  const { register, formState: { errors }, watch, handleSubmit } = useForm("");
+  const onSubmit = (data) => {
+    console.log(data);
+
+  }
+  return (
+    <>
+      <h2>Formulario de Contacto</h2>
+      <div className="nombre"> Nombre: {watch('nombre')}</div>
+      <div className="apellido"> Apellido: {watch('apellido')}</div>
+      
+      <form onSubmit={handleSubmit(onSubmit)} >
+        <div>
+          <label>Nombre</label>
+          <input type="text" {...register('nombre', {
+            required: true,
+            maxLength: 15,
+            minLength: 3
+          })}/>
+
+          {errors.nombre?.type === 'required' && <p className="p"> El campo Nombre es obligatorio </p>
+          }
+          {errors.nombre?.type === 'maxLength' && <p className="p"> El campo Nombre debe tener menos de 15 caracteres</p>
+          }
+          {errors.nombre?.type === 'minLength' && <p className="p"> El campo Nombre debe tener al menos 3 caracteres</p>
+          } 
+        </div>
+
+        <div>
+          <label>Apellido</label>
+          <input type="text" {...register('apellido', {
+            required: true,
+            maxLength: 15,
+            minLength: 3
+          })}/>
+            {errors.apellido?.type === 'required' && <p className="p"> El campo Apellido es obligatorio </p>
+          }
+          {errors.apellido?.type === 'maxLength' && <p className="p"> El campo Apellido debe tener menos de 15 caracteres</p>
+          }  
+          {errors.apellido?.type === 'minLength' && <p className="p"> El campo Apellido debe tener al menos 3 caracteres</p>
+          } 
+        </div>
+        <div>
+          <label>Edad</label>
+          <input type="number" {...register('edad', {
+            required: true,
+            min:18,
+            max:99
+          })}/>
+
+          {errors.edad?.type === 'required' && 
+          <p className="p"> El campo Edad es obligatorio </p>
+          }
+          {errors.edad?.type === 'min' && <p className="p"> Debes tener al menos 18 años de edad</p>
+          }
+          {errors.edad?.type === 'max' && <p className="p">El Limite de edad es de 99 años</p>
+          } 
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="text" {...register('email', {
+            pattern: /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
+          })} />
+
+
+          {errors.email?.type === 'pattern' && <p className="p"> El Formato es Incorrecto </p>
+          }
+        </div>
+        <div>
+          <label>Estilo Preferido</label>
+          <select {...register('sabor')}>
+            <option value="expresso">Expresso</option>
+            <option value="lungo">Lungo</option>
+            <option value="lagrima">Lágrima</option>
+            <option value="cortado">Cortado</option>
+            <option value="conLeche">Café Con Leche</option>
+            <option value="latte">Latte</option>
+            <option value="mocca">Mocca</option>
+            <option value="capuccino">Capuccino</option>
+            <option value="irlandes">Café Irlandés</option>
+          </select>
+        </div>
+        <input type="Submit" value="Enviar" />
+      </form>
+    </>
+  );
+};
+
+export default Contacto;
