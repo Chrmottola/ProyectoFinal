@@ -11,15 +11,14 @@ const Contacto = () => {
 
   }
   return (
-    <>
-      <h2>Formulario de Contacto</h2>
+    <section className="sectionContacto">
+      <h2 className="tituloContacto">Formulario de Contacto</h2>
       <div className="nombre"> Nombre: {watch('nombre')}</div>
       <div className="apellido"> Apellido: {watch('apellido')}</div>
       
-      <form onSubmit={handleSubmit(onSubmit)} >
+      <form onSubmit={handleSubmit(onSubmit)} className="formularioContacto" >
         <div>
-          <label>Nombre</label>
-          <input type="text" {...register('nombre', {
+          <input placeholder="Nombre" type="text" {...register('nombre', {
             required: true,
             maxLength: 15,
             minLength: 3
@@ -34,8 +33,8 @@ const Contacto = () => {
         </div>
 
         <div>
-          <label>Apellido</label>
-          <input type="text" {...register('apellido', {
+
+          <input placeholder="Apellido"  type="text" {...register('apellido', {
             required: true,
             maxLength: 15,
             minLength: 3
@@ -48,8 +47,7 @@ const Contacto = () => {
           } 
         </div>
         <div>
-          <label>Edad</label>
-          <input type="number" {...register('edad', {
+          <input placeholder="Edad" type="number" {...register('edad', {
             required: true,
             min:18,
             max:99
@@ -64,8 +62,7 @@ const Contacto = () => {
           } 
         </div>
         <div>
-          <label>Email</label>
-          <input type="text" {...register('email', {
+          <input placeholder="Email" type="text" {...register('email', {
             pattern: /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
           })} />
 
@@ -89,7 +86,7 @@ const Contacto = () => {
         </div>
         <input type="Submit" value="Enviar" />
       </form>
-    </>
+    </section>
   );
 };
 

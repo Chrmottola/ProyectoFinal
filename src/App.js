@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/Estilos" element={<Estilos/>} />
         <Route path="/Contacto" element={<Contacto/>} />
+        <Route path="http:\\google.com"/>
       </Routes>
       <Footer />
     </BrowserRouter>

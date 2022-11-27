@@ -8,11 +8,11 @@ import whatsapp from "./img/whatsapp.ico"
 const Footer=()=>{
   return(
     <footer>
-    <Link to="http://google.com" target="_blank" ><img src={facebook} alt="logo facebook" width="30" height="30"/></Link>
+    <Link to="http://www.google.com" target="_blank" ><img src={facebook} alt="Ir a facebook" width="30" height="30"/></Link>
     <img src={instagram} alt="logo Instagram" width="30" height="30" />
     <img src={whatsapp} alt="logo whatsapp" width="30" height="30"/>
     </footer>
-    )
+  )  
 }
 
 

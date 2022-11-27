@@ -1,0 +1,26 @@
+
+.sectionContacto{
+  display: flex;
+  border: solid 0.1rem black ;
+  text-align: center;
+  flex-wrap: nowrap;
+  
+}
+
+.tituloContacto {
+  text-align: center;
+  margin-bottom: 1vh;
+  padding: 1vh;
+  font-size: 2rem;
+}
+
+.formularioContacto {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 4vh;
+  align-items: center;
+
+}
+
+
