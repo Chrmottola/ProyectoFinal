@@ -1,3 +1,7 @@
+.headerNavegador{
+  height: 35%;
+}
+
 .navNavbar{
   display: flex;
   flex-direction: column;

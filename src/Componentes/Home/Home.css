@@ -1,5 +1,18 @@
-.ImgPrincipal{
+.mainHome {
+  height: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  color: darkslategray;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+
+.ImgPrincipal {
   width: 100%;
   height: 50%;
   opacity: 0.8;
+  border-radius: 3%;
+  margin-top: 2vh;
 }

@@ -5,7 +5,7 @@ import logo from "./img/logo.png"
 
 const Navegador=({tituloNavegador})=>{
   return(
-      <header>
+      <header className="headerNavegador">
       <div className="divNavBar">
       <img src={logo} alt="logo" width="60px" height="60px"/>
       <h2 className="navBarTitulo">{tituloNavegador}</h2>
