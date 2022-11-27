@@ -1,6 +1,7 @@
 import React from "react";
 import "./Estilos.css"
-import expresso from "./expresso.jpg"
+import expresso from "./Img/expresso.jpg"
+import fondoEstilos from "./Img/fondoEstilos.jpg"
 import { useState } from "react";
 
 
@@ -11,12 +12,15 @@ const Estilos = () => {
   const[info,setInfo]= useState("");
 
   return (
-      <main>
+      <main className="mainEstilos">
+        <p><em>Disfruta el Café en sus Distintas </em></p>
+      <p><em>Formas de Preparacíon</em></p>
+      <img className="imgFondoEstilos" src={fondoEstilos} alt="Imagen de Fondo" />
       <div className="divEstilos">
         <p>Expresso</p>
         <p>{info}</p>
         <img className="imgEstilos" src={expresso} alt="Imagen de expresso" />
-        <button onClick={()=> setInfo(texto)}>Mostrar Información</button>
+        <button onClick={()=> setInfo(texto)} className="btnEstilos">Mostrar Información</button>
       </div>
       
       {/* <p>Lungo</p>

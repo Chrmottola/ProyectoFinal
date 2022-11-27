@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Footer.css"
 import facebook from "./img/facebook.ico"
 import instagram from "./img/instagram.ico"
@@ -12,9 +11,9 @@ const Footer = () => {
           <p>© 2022 Copyright</p>
           </div>
           <div className="divFooterLink">
-          <Link to="http://www.facebook.com" target="_blank" ><img src={facebook} alt="Ir a facebook" width="30" height="30" /></Link>
-          <img src={instagram} alt="logo Instagram" width="30" height="30" />
-          <img src={whatsapp} alt="logo whatsapp" width="30" height="30" />
+          <a href="https://www.facebook.com"><img src={facebook} alt="Ir a facebook" width="30" height="30" /></a>
+          <a href="https://www.instagram.com"><img src={instagram} alt="Ir a Instagram" width="30" height="30" /></a>
+          <a href="https://api.whatsapp.com/send?phone=5491157680214"><img src={whatsapp} alt="logo whatsapp" width="30" height="30" /></a>  
         </div>
         <div>
         <p>Christian Mottola</p>
