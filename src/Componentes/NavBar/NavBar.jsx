@@ -10,13 +10,13 @@ const Navegador=({tituloNavegador})=>{
       <img src={logo} alt="logo" width="60px" height="60px"/>
       <h2 className="navBarTitulo">{tituloNavegador}</h2>
       </div>
-      <nav className="navNavbar">
+      <div className="navNavbar">
       <ul>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/Estilos">Estilos</NavLink></li>
         <li><NavLink to="/Contacto">Contacto</NavLink></li>
       </ul>
-    </nav>
+    </div>
     </header>
   )
 };
