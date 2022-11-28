@@ -8,7 +8,6 @@ import cafeconlecheimg from "./Img/cafeconleche.jpg"
 import moccaimg from "./Img/mocca.jpg"
 import capuccinoimg from "./Img/capuccino.jpg"
 import irlandesimg from "./Img/irlandes.jpg"
-
 import fondoEstilos from "./Img/fondoEstilos.jpg"
 import { useState } from "react";
 
