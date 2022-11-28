@@ -1,4 +1,5 @@
 footer{
+  margin-bottom: 2vh;
   height: 15%;
   display: flex;
   flex-direction:column;
@@ -29,4 +30,9 @@ footer{
     gap: 2vh
   }
 
+}
+
+.iconofooter:hover{
+  width: 31px;
+  height: 31px;
 }
