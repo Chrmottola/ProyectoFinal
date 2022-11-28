@@ -1,6 +1,7 @@
 import React from "react";
 import "./Estilos.css"
 import expresso from "./Img/expresso.jpg"
+import lungoimg from "./Img/lungo.jpg"
 import lagrimaimg from "./Img/lagrima.jpg"
 import cortadoimg from "./Img/cortado.jpg"
 import cafeconlecheimg from "./Img/cafeconleche.jpg"
@@ -50,7 +51,7 @@ const Estilos = () => {
         <div className="divEstilos">
           <p>Lungo</p>
           <p>{infolungo}</p>
-          <img className="imgEstilos" src={expresso} alt="Imagen de expresso" />
+          <img className="imgEstilos" src={lungoimg} alt="Imagen de expresso" />
           <button onClick={() => setInfo2(lungo)} className="btnEstilos">Mostrar Información</button>
         </div>
         <div className="divEstilos">
