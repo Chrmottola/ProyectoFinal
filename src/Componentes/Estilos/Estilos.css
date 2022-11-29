@@ -37,7 +37,7 @@
 }
 
 .imgEstilos {
-  width: 75%;
+  width: 80%;
   height: 55%;
   border-radius: 50%;
   margin-top: 1.5vh;
@@ -45,7 +45,7 @@
 }
 
 .btnEstilos {
-  width: 80%;
+  width: 70%;
   height: 15%;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -53,7 +53,7 @@
   border-color: transparent;
   background-color: rgb(32, 25, 14);
   box-shadow: none;
-  font-size: 8px;
+  font-size: 9px;
   color: white;
 }
 
@@ -63,7 +63,7 @@
   }
 
   .btnEstilos {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 

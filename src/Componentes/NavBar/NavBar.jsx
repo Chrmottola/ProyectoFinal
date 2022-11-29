@@ -13,8 +13,8 @@ const Navegador=({tituloNavegador})=>{
       <div className="navNavbar">
       <ul>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/Estilos">Estilos</NavLink></li>
         <li><NavLink to="/Guia">Guia</NavLink></li>
+        <li><NavLink to="/Estilos">Estilos</NavLink></li>
         <li><NavLink to="/Contacto">Contacto</NavLink></li>
         <li><NavLink to="/Registro">Usuarios</NavLink></li>
       </ul>

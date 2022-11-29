@@ -15,8 +15,8 @@ function App() {
       <Navegador tituloNavegador="Mundo Café" />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/Estilos" element={<Estilos/>} />
         <Route path="/Guia" element={<Guia/>} />
+        <Route path="/Estilos" element={<Estilos/>} />
         <Route path="/Contacto" element={<Contacto/>} />
         <Route path="/Registro" element={<Registro/>} />
       </Routes>
