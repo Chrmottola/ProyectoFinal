@@ -1,4 +1,4 @@
-.mainEstilos{
+.mainEstilos {
   font-size: 20px;
   font-weight: 700;
   color: darkslategray;
@@ -7,13 +7,13 @@
   margin-bottom: 2vh;
 }
 
-.divEstilosPrincipal{
+.divEstilosPrincipal {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.imgFondoEstilos{
+.imgFondoEstilos {
   width: 100%;
   height: 40%;
   opacity: 0.8;
@@ -22,36 +22,58 @@
 }
 
 
-.divEstilos{
-  margin:1vh ;
+.divEstilos {
+  margin: 1vh;
   margin-bottom: 2vh;
   padding: 1vh;
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
   color: white;
-  background-color:rgb(117, 102, 78);
+  background-color: rgb(117, 102, 78);
   width: 42vh;
   height: 48vh;
   border-radius: 20%;
 
 }
 
-.imgEstilos{
+.imgEstilos {
   width: 75%;
   height: 55%;
   border-radius: 50%;
   margin-top: 1.5vh;
 
 }
-.btnEstilos{
+
+.btnEstilos {
   width: 80%;
   height: 15%;
   margin-top: 2vh;
   margin-bottom: 2vh;
   border-radius: 15px;
   border-color: transparent;
-  background-color:rgb(32, 25, 14);
+  background-color: rgb(32, 25, 14);
   box-shadow: none;
-  font-size:small;
+  font-size: 8px;
   color: white;
+}
+
+@media((min-width: 768px) and (min-height: 575px)) {
+  .divEstilos {
+    font-size: 15px;
+  }
+
+  .btnEstilos {
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 300px) {
+  .imgEstilos {
+    display: none;
+  }
+}
+@media(max-height: 300px){
+  .imgEstilos {
+    display: none;
+  }
 }
