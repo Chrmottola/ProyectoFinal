@@ -27,13 +27,17 @@
   margin-bottom: 2vh;
   padding: 1vh;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   color: white;
   background-color: rgb(117, 102, 78);
   width: 42vh;
   height: 48vh;
   border-radius: 20%;
 
+}
+
+.divEstilos p {
+  margin-top: 1.5vh;
 }
 
 .imgEstilos {
@@ -47,13 +51,13 @@
 .btnEstilos {
   width: 70%;
   height: 15%;
-  margin-top: 2vh;
+  margin-top: 2.5vh;
   margin-bottom: 2vh;
   border-radius: 15px;
   border-color: transparent;
   background-color: rgb(32, 25, 14);
   box-shadow: none;
-  font-size: 9px;
+  font-size: 10px;
   color: white;
 }
 
@@ -71,9 +75,28 @@
   .imgEstilos {
     display: none;
   }
+
+  .btnEstilos {
+    font-size: 6px;
+  }
+
+  .divEstilos {
+    font-size: 8px;
+  }
 }
+
+
+
 @media(max-height: 300px){
   .imgEstilos {
     display: none;
+  }
+
+  .btnEstilos {
+    font-size: 6px;
+  }
+
+  .divEstilos {
+    font-size: 8px;
   }
 }
