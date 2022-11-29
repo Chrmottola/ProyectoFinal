@@ -61,7 +61,7 @@
   color: white;
 }
 
-@media((min-width: 768px) and (min-height: 575px)) {
+@media((min-width: 301px) and (min-height: 575px)) {
   .divEstilos {
     font-size: 15px;
   }
@@ -71,7 +71,7 @@
   }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 300px) {
   .btnEstilos {
     font-size: 6px;
   }
