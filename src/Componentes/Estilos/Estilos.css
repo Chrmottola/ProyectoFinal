@@ -71,11 +71,7 @@
   }
 }
 
-@media(max-width: 300px) {
-  .imgEstilos {
-    display: none;
-  }
-
+@media(max-width: 450px) {
   .btnEstilos {
     font-size: 6px;
   }
@@ -87,11 +83,7 @@
 
 
 
-@media(max-height: 300px){
-  .imgEstilos {
-    display: none;
-  }
-
+@media(max-height: 450px){
   .btnEstilos {
     font-size: 6px;
   }
