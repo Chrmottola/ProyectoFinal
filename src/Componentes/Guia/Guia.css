@@ -4,9 +4,11 @@
   align-items: center;
   gap: 2vh;
   margin: 2vh;
-
 }
 
+.mainGuia p:hover{
+  font-weight: 700;
+}
 .divTituloGuia {
   font-size: 20px;
   font-weight: 700;
@@ -17,20 +19,18 @@
 }
 
 .subtitulosGuia {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: darkslategray;
 }
 
 .divIframeGuia {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   gap: 4vh;
   margin-top: 3vh;
   margin-bottom: 2vh;
-  width: 80vh;
-  height: 40vh;
 }
